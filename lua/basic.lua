@@ -20,9 +20,10 @@ vim.wo.signcolumn = "yes"
 vim.wo.colorcolumn = "90"
 
 -- set tabstop to 2
-vim.o.tabstop = 2
-vim.bo.tabstop = 2
-vim.o.softtabstop = 2
+vim.o.tabstop = 4
+vim.bo.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
 vim.o.shiftround = true
 
 -- replace tab with space

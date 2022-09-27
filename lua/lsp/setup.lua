@@ -10,9 +10,14 @@ require("nvim-lsp-installer").setup({
     }
 })
 
+-- How to write configuration files:
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+-- After finished the configuration file, add it to the local servers under.
 local servers = {
         sumneko_lua = require "lsp.lua",
-        pylsp = require "lsp.python"
+        pylsp = require "lsp.python",
+        clangd = require "lsp.c",
+        rust_analyzer = require "lsp.rust-analyzer"
 }
 
 
