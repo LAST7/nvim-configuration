@@ -19,7 +19,7 @@ vim.wo.signcolumn = "yes"
 -- the reference line on the right side
 vim.wo.colorcolumn = "90"
 
--- set tabstop to 2
+-- set tabstop to 4
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
 vim.o.softtabstop = 4

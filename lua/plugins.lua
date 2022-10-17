@@ -23,4 +23,16 @@ return require('packer').startup(function(use)
         use 'rafamadriz/friendly-snippets'
         -- lspkind
         use 'onsails/lspkind-nvim'
+
+        -- treesitter
+        use {
+            'nvim-treesitter/nvim-treesitter',
+            run = ':TSUpdate'
+        }
+
+        -- autopair
+        use {
+            'windwp/nvim-autopairs',
+            config = function() require("nvim-autopairs").setup {} end
+        }
 end)

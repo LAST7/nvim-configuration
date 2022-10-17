@@ -17,6 +17,13 @@ lua require('lsp/setup')
 " completion
 lua require('lsp/cmp')
 
+" treesitter
+lua require('treesitter')
+
+" auto-pair
+lua require('auto-pair')
+" lua require('nvim-autopairs').disable()
+
 " theme
 set background=dark
 colorscheme zephyr
