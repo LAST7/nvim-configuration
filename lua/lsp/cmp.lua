@@ -1,5 +1,6 @@
 local lspkind = require('lspkind')
 local cmp = require('cmp')
+
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
 cmp.setup {
@@ -67,7 +68,7 @@ cmp.setup.cmdline(':', {
         })
 })
 
--- Add mapping 'CR'
+-- Add mapping 'CR' for autopairs
 cmp.event:on(
     'confirm_done',
     cmp_autopairs.on_confirm_done()

@@ -8,7 +8,7 @@ vim.o.sidescrolloff = 8
 
 -- relative line number
 vim.wo.number = true
-vim.wo.relativenumber = true
+-- vim.wo.relativenumber = true
 
 -- highlight the current line
 vim.wo.cursorline = true
@@ -68,7 +68,7 @@ vim.opt.termguicolors = true
 
 -- show invisible characters (space)
 vim.o.list = true
-vim.o.listchars = "space:·"
+vim.o.listchars = "space:·,tab:^I"
 
 -- enhance the completion function
 vim.o.wildmenu = true
