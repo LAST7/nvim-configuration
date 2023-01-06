@@ -1,4 +1,3 @@
-
 " Basic settings
 lua require('basic')
 
@@ -12,13 +11,19 @@ lua require('keybindings')
 lua require('plugins')
 
 " lsp
-lua require('lsp/setup')
+lua require('lsp.setup')
 
 " completion
-lua require('lsp/cmp')
+lua require('lsp.cmp')
 
 " treesitter
 lua require('treesitter')
+
+" lualine
+lua require('lua-line')
+
+" colorizer
+lua require('colorize')
 
 " auto-pair
 lua require('auto-pair')
@@ -27,3 +32,4 @@ lua require('auto-pair')
 " theme
 set background=dark
 colorscheme zephyr
+

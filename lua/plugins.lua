@@ -30,9 +30,27 @@ return require('packer').startup(function(use)
             run = ':TSUpdate'
         }
 
+        -- colorizer
+        use 'norcalli/nvim-colorizer.lua'
+        require 'colorizer'.setup {
+            'css';
+            'javascript';
+            html = {
+                    mode = 'foreground';
+            }
+        }
+        -- I dont know why this doesnt work in a seperate file
+
+        -- lualine
+        use {
+            'nvim-lualine/lualine.nvim',
+            requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        }
+
         -- autopair
         use {
             'windwp/nvim-autopairs',
             config = function() require("nvim-autopairs").setup {} end
         }
+
 end)

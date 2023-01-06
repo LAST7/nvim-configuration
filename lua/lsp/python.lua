@@ -1,4 +1,3 @@
-
 require'lspconfig'.pylsp.setup{
         settings = {
                 pylsp = {

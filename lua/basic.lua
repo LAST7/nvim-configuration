@@ -8,7 +8,7 @@ vim.o.sidescrolloff = 8
 
 -- relative line number
 vim.wo.number = true
--- vim.wo.relativenumber = true
+vim.wo.relativenumber = true
 
 -- highlight the current line
 vim.wo.cursorline = true

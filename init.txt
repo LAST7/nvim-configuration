@@ -1,0 +1,33 @@
+-- Basic settings
+require('basic')
+
+vim.o.clipboard = "unnamedplus"
+
+-- Keyboard mappings
+require('keybindings')
+
+
+-- Packer plugin management
+require('plugins')
+
+-- lsp
+require('lsp.setup')
+
+-- completion
+require('lsp.cmp')
+
+-- treesitter
+require('treesitter')
+
+-- lualine
+require('lualine')
+
+-- auto-pair
+require('auto-pair')
+-- lua require('nvim-autopairs').disable()
+
+-- theme
+require('zephyr')
+vim.o.background="dark"
+
+

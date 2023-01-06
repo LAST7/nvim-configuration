@@ -17,7 +17,9 @@ local servers = {
         sumneko_lua = require "lsp.lua",
         pylsp = require "lsp.python",
         clangd = require "lsp.c",
-        rust_analyzer = require "lsp.rust-analyzer"
+        rust_analyzer = require "lsp.rust-analyzer",
+        tailwindcss = require "lsp.tailwindcss",
+        tsserver = require "lsp.tsserver"
 }
 
 

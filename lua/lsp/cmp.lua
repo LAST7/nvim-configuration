@@ -52,6 +52,8 @@ cmp.setup {
         },
 }
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 -- Use buffer source for `/`.
 cmp.setup.cmdline('/', {
         sources = {
