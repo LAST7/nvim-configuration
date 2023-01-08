@@ -32,14 +32,6 @@ return require('packer').startup(function(use)
 
         -- colorizer
         use 'norcalli/nvim-colorizer.lua'
-        require 'colorizer'.setup {
-            'css';
-            'javascript';
-            html = {
-                    mode = 'foreground';
-            }
-        }
-        -- I dont know why this doesnt work in a seperate file
 
         -- lualine
         use {

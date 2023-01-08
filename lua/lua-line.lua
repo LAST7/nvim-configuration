@@ -1,6 +1,13 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
+        theme = 'palenight',
+    },
+
+    -- The default configuration from Github:
+    --[[
+    options = {
+        icons_enabled = true,
         theme = 'auto',
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
@@ -17,6 +24,7 @@ require('lualine').setup {
             winbar = 1000,
         }
     },
+    ]]
     sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', 'diagnostics'},
